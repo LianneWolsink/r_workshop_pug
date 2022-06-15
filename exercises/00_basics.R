@@ -84,15 +84,26 @@ typeof(3.2)
 # Let's take a look at how we can "produce" logicals.
 
 # 3.1) Run 12 > 3.
+12>3
 
 # 3.1) Run 12 == 12. What does it do? What happens if you try 12 = 12 instead?
+12 == 12 
+12 = 12
 
 # 3.2) What is "cat" != "dog"?
 
+"cat"!= "dog"
+
 # 3.3) Try out: FALSE & FALSE, then FALSE & TRUE and finally, TRUE & TRUE. 
 #      What happens?
+FALSE & FALSE
+FALSE & TRUE
+TRUE & TRUE
 
 # 3.4) Try the same as above, but replace & with | (alt gr + <). What does | do?
+FALSE | FALSE
+FALSE | TRUE
+TRUE | TRUE
 
 ## OPTIONAL --------------------------------------------------------------------
 
@@ -128,11 +139,16 @@ single_number <- 7
 # 4.1) Type single_number (without quotation marks) into the console and hit 
 #      return. What happens?
 
+single_number
+
 # 4.2) Run the following code and once again, run single_number in the console. 
 #      What changed?
 single_number <- 2
+single_number
 
 # 4.3) Assign something to a variable with a name of your choice.
+variable <- 8
+this_is_a_string <- "Good morning"
 
 # 4.4) Examine what happens here. What is the result? What do you think will 
 #      single_number contain now? 2 or 6? Run single_number in the console to 

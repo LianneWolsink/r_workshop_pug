@@ -81,9 +81,18 @@ my_vector # print vector
 ```
 
 1.1) Create some vectors. Create one vector with characters, one with numbers, and one with logicals. Save them all into different variables.
+```{r}
+Coffee_break <- c("coffee", "cake", "biscuits")
+Some_numbers <- c(10, 8, 12, 15)
+Some_logicals <- c(TRUE, FALSE, FALSE, TRUE)
+Some_decimals <- c(0.5, 0.6, 0.7, 0.8)
+```
 
 1.2) We saw that the `c()` function combines elements into a vector, but it can also combine vectors! Try to combine some of the vectors you previously created using the `c()` function.
-
+c()
+```{r}
+c(Some_decimals + Some_numbers)
+```
 ### Optional
 
 This isn't the first time you've used a vector. In fact, everything we did in "basics" exercises was about vectors. E.g., `2` is a one-element vector, just like `"hello"`. For one-element vectors, we don't need `c()`, because there isn't anything that needs to be combined.
@@ -112,11 +121,17 @@ c(1, 2, 5) + 1
 What do you expect the following code will produce?
 
 2.2) `c(1, 2, 5) - 1`
-
+```{r}
+c(1,2,5)-1
+```
 2.3) `c(1, 2, 5) * 2`
-
+```{r}
+c(1,2,5)*2
+```
 2.4) `c(1, 2, 5) / 2`
-
+```{r}
+c(1,2,5)/2
+```
 Vectors are one of the most important concepts of `R`.
 Sure, other programming languages have similar concepts, but in `R`, vectors are really powerful.
 A lot of things are "vectorised", that means that functions work on entire vectors, or that clever combinations of vectors can be used to produce the desired results.
@@ -126,15 +141,21 @@ As usual, it is easier to look at it than to describe it:
 ```{r}
 c(2, 4, 6) + c(1, 0, 2)
 ```
-
 Now, you can infer what these lines of code will do:
 
 2.5) `c(2, 4, 6) - c(1, 0, 1)`
 
+```{r}
+c(2, 4, 6) - c(1, 0, 1)
+```
 2.6) `c(2, 4, 6) * c(1, 0, 1)`
-
+```{r}
+c(2, 4, 6) * c(1, 0, 1)
+```
 2.7) `c(2, 4, 6) / c(1, 2, 1)`
-
+```{r}
+c(2, 4, 6) / c(1, 2, 1)
+```
 However, things get *really* wild when we use vectors that don't have the same length.
 
 Can you see what happened here?
@@ -147,10 +168,15 @@ Let's look at this concept some more.
 
 2.8) Can you multiply **every other** element of `c(2, 4, 6, 4, 9, 12)` with 2? (I.e. only 4, 4 and 12 should be multiplied with 2 - the other elements should be left unchanged.)
 
+```{r}
+c(2,4,6,4,9,12)*c(1,2)
+```
 ### Optional
 
 2.9) Given `c(2, 4, 6, 4, 9, 12)`, subtract 1 from the first element, 2 from the second, 3 from the third, then again 1 from the fourth, 2 from the second and so on.
-
+```{r}
+c(2, 4, 6, 4, 9, 12)-c(1,2,3)
+```
 2.10) Run the following code cell. What happened here? Is that bad?
 
 ```{r}
